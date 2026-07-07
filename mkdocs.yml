@@ -19,23 +19,36 @@ markdown_extensions:
 extra_css:
   - stylesheets/orbit-light.css
 
+extra:
+  alternate:
+    - name: Italiano
+      link: /orbit-light-docs/it/
+      lang: it
+    - name: English
+      link: /orbit-light-docs/en/
+      lang: en
+
 nav:
-  - Home: index.md
-  - Perché Orbit Light: why-orbit-light.md
-  - Per iniziare:
-      - Installazione: installation.md
-      - Guida rapida: quick-start.md
-  - Workflow:
-      - Workflow manuale: workflow.md
-      - HDRI Environment: hdri-environment.md
-      - Shortcut e rotazione: shortcuts.md
-      - Material Maps: material-maps.md
-  - Riferimento:
-      - Riferimento impostazioni: settings-reference.md
-      - Consigli export: export-tips.md
-  - Supporto:
-      - FAQ: faq.md
-      - Risoluzione problemi: troubleshooting.md
-      - Video Tutorials: video-tutorials.md
-      - Changelog: changelog.md
-      - Supporto: support.md
+  - Scegli lingua: index.md
+  - Italiano:
+      - Home: it/index.md
+      - Perche Orbit Light: it/why-orbit-light.md
+      - Per iniziare:
+          - Installazione: it/installation.md
+          - Guida rapida: it/quick-start.md
+      - Workflow:
+          - Workflow manuale: it/workflow.md
+          - HDRI Environment: it/hdri-environment.md
+          - Shortcut e rotazione: it/shortcuts.md
+          - Material Maps: it/material-maps.md
+      - Riferimento:
+          - Riferimento impostazioni: it/settings-reference.md
+          - Consigli export: it/export-tips.md
+      - Supporto:
+          - FAQ: it/faq.md
+          - Risoluzione problemi: it/troubleshooting.md
+          - Video Tutorials: it/video-tutorials.md
+          - Changelog: it/changelog.md
+          - Supporto: it/support.md
+  - English:
+      - Coming soon: en/index.md
