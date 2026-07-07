@@ -1,0 +1,41 @@
+site_name: Orbit Light Documentation
+site_url: https://marioschiano.github.io/orbit-light-docs/
+
+theme:
+  name: material
+  language: it
+  palette:
+    scheme: slate
+    primary: amber
+    accent: orange
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+
+extra_css:
+  - stylesheets/orbit-light.css
+
+nav:
+  - Home: index.md
+  - Perché Orbit Light: why-orbit-light.md
+  - Per iniziare:
+      - Installazione: installation.md
+      - Guida rapida: quick-start.md
+  - Workflow:
+      - Workflow manuale: workflow.md
+      - HDRI Environment: hdri-environment.md
+      - Shortcut e rotazione: shortcuts.md
+      - Material Maps: material-maps.md
+  - Riferimento:
+      - Riferimento impostazioni: settings-reference.md
+      - Consigli export: export-tips.md
+  - Supporto:
+      - FAQ: faq.md
+      - Risoluzione problemi: troubleshooting.md
+      - Video Tutorials: video-tutorials.md
+      - Changelog: changelog.md
+      - Supporto: support.md

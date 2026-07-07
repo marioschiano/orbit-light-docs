@@ -1,0 +1,38 @@
+:root {
+  --ol-orange: #f59e0b;
+  --ol-orange-soft: rgba(245, 158, 11, 0.15);
+  --ol-border: rgba(255, 255, 255, 0.12);
+  --ol-panel: rgba(255, 255, 255, 0.04);
+  --ol-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+.md-typeset { line-height: 1.72; }
+.md-typeset h1 { margin-bottom: 1.15rem; }
+.md-typeset h2 { margin-top: 2.2rem; }
+.md-typeset hr { border-bottom-color: var(--ol-border); margin: 2rem 0; }
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--ol-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ol-panel);
+  box-shadow: var(--ol-shadow);
+}
+.md-typeset table:not([class]) th { background: var(--ol-orange-soft); font-weight: 700; }
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td { padding: 0.72rem 0.9rem; vertical-align: top; line-height: 1.55; }
+.md-typeset img { border-radius: 6px; }
+.md-typeset p[align="center"] > img,
+.md-typeset div[style*="text-align:center"] > img,
+.md-typeset div[style*="text-align: center"] > img { box-shadow: var(--ol-shadow); background: rgba(0, 0, 0, 0.16); }
+.md-typeset img[src$="placeholder-image.svg"] {
+  border: 1px dashed rgba(245, 158, 11, 0.38);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.08), rgba(255, 255, 255, 0.025));
+}
+.md-typeset .admonition { border-radius: 8px; box-shadow: var(--ol-shadow); border-left-width: 0.22rem; }
+.md-typeset .admonition.tip { border-left-color: var(--ol-orange); }
+.md-typeset .admonition.tip > .admonition-title { background: var(--ol-orange-soft); }
+.ol-video { position: relative; width: 100%; max-width: 920px; aspect-ratio: 16 / 9; margin: 1.35rem 0 2rem; border-radius: 8px; overflow: hidden; background: rgba(0,0,0,.24); box-shadow: var(--ol-shadow); }
+.ol-video-placeholder { display: flex; min-height: 100%; align-items: center; justify-content: center; padding: 2rem; border: 1px dashed rgba(245,158,11,.38); text-align: center; background: rgba(255,255,255,.035); }
+.ol-video-placeholder strong { display: block; margin-bottom: .35rem; color: var(--md-default-fg-color); font-size: 1.1rem; }
+@media screen and (max-width: 720px) { .md-typeset div[style*="grid-template-columns"] { display: block !important; } }
