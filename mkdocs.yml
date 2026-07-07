@@ -4,6 +4,8 @@ site_url: https://marioschiano.github.io/orbit-light-docs/
 theme:
   name: material
   language: it
+  icon:
+    alternate: material/earth
   palette:
     scheme: slate
     primary: amber
