@@ -1,11 +1,12 @@
 # Changelog
 
-## 1.9.1
+## 1.0.0
 
-Prima documentazione italiana iniziale per Orbit Light.
+Prima release ufficiale di Orbit Light.
 
 ### Documentazione
 
-- Home e guida rapida.
-- Sezioni HDRI Environment, shortcut, Material Maps e riferimento impostazioni.
+- Documentazione italiana iniziale.
+- Home, installazione e guida rapida.
+- Workflow manuale, HDRI Environment, shortcut, Material Maps e riferimento impostazioni.
 - FAQ, troubleshooting, video tutorial placeholder e supporto.
