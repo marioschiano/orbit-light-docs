@@ -33,7 +33,7 @@ plugins:
             Workflow manuale: Manual Workflow
             HDRI Environment: HDRI Environment
             Shortcut e rotazione: Shortcuts and Rotation
-            Material Maps: Material Maps
+            Inspection e controlli materiale: Inspection and Material Controls
             Riferimento: Reference
             Riferimento impostazioni: Settings Reference
             Consigli export: Export Tips
@@ -69,7 +69,7 @@ nav:
       - Workflow manuale: workflow.md
       - HDRI Environment: hdri-environment.md
       - Shortcut e rotazione: shortcuts.md
-      - Material Maps: material-maps.md
+      - Inspection e controlli materiale: material-maps.md
   - Riferimento:
       - Riferimento impostazioni: settings-reference.md
       - Consigli export: export-tips.md

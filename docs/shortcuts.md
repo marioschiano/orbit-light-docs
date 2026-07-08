@@ -14,16 +14,6 @@ Questo ruota l'HDRI orizzontalmente attorno al modello, in modo simile a Substan
 
 ---
 
-## Inclinare l'environment
-
-Usa:
-
-**Shift + Alt + Right Mouse Drag**
-
-Questo inclina verticalmente l'HDRI quando Blender espone i controlli nativi necessari.
-
----
-
 ## Sensitivity
 
 Il controllo **Sensitivity** modifica quanto velocemente cambia la rotazione durante il drag.

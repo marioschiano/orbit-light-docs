@@ -8,11 +8,17 @@ Questa sezione controlla la luce dell'ambiente HDRI.
 
 ---
 
-## Environment Light
+## Create Orbit Light
 
-Abilita o disabilita l'illuminazione HDRI.
+Crea o aggiorna l'environment HDRI di Orbit Light.
 
-Quando è disattivato, la forza luminosa dell'environment viene portata a zero.
+Dopo aver scelto una HDRI, clicca **Create Orbit Light** per applicarla alla scena e lavorare in Material Preview.
+
+## HDRI picker
+
+Il picker in alto usa le Studio Light disponibili in Blender.
+
+È utile quando vuoi scegliere rapidamente una HDRI già presente nella libreria.
 
 ## HDRI
 
@@ -44,12 +50,20 @@ Usa il blur nativo di Material Preview quando disponibile.
 
 Ruota l'HDRI orizzontalmente attorno al modello.
 
-## Environment Tilt
+## Sensitivity
 
-Inclina verticalmente l'HDRI quando Blender espone i controlli Studio Light necessari.
+Controlla quanto velocemente cambia la rotazione durante il drag.
 
-Se Blender non espone quel controllo, lo slider resta disabilitato.
+## Rotate Environment
 
-## Environment Alignment
+Il pulsante con icona mouse avvia la rotazione interattiva dell'environment.
 
-Sceglie se l'HDRI resta allineata al mondo o alla camera/view.
+## Drag Target
+
+Decide cosa controlla il drag interattivo.
+
+Di norma lo usi per ruotare l'environment HDRI.
+
+## Shadows
+
+Attiva o disattiva le ombre viewport quando la versione di Blender espone il controllo necessario.

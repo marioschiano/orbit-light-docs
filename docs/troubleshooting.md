@@ -6,7 +6,6 @@ Controlla che:
 
 - sei in Material Preview;
 - hai cliccato **Create Orbit Light**;
-- **Environment Light** è attivo;
 - il percorso **HDRI** punta a un file valido;
 - **Environment Opacity** non è troppo basso se vuoi vedere anche lo sfondo.
 
@@ -26,9 +25,7 @@ Controlla lo shortcut:
 
 **Shift + Right Mouse Drag**
 
-Se vuoi inclinare verticalmente:
-
-**Shift + Alt + Right Mouse Drag**
+Controlla anche che **Orbit Light ON** sia attivo e che **Drag Target** sia impostato sul comportamento che vuoi controllare.
 
 ## AO Strength o Normal Strength non cambiano nulla
 
@@ -38,4 +35,4 @@ Se il materiale non contiene nodi AO/Occlusion o Normal Map compatibili, non ci 
 
 ## Le ombre non cambiano
 
-**Shadows Opacity** dipende dai controlli viewport esposti dalla versione di Blender. Se Blender non espone quel valore, lo slider può essere disabilitato.
+**Shadows** dipende dai controlli viewport esposti dalla versione di Blender. Se Blender non espone quel valore, Orbit Light applica solo i controlli disponibili.

@@ -8,11 +8,13 @@ Il workflow attuale crea/aggiorna il setup World HDRI. Se esiste una vecchia lam
 
 No. Environment Opacity cambia la visibilità dello sfondo HDRI, ma l'HDRI continua a illuminare il modello.
 
-## Perché Environment Tilt è disabilitato?
+## Dove controllo UV, wireframe e normal map?
 
-Perché Blender non espone sempre i controlli nativi necessari per inclinare verticalmente la Studio Light. In quel caso Orbit Light mantiene disabilitato lo slider per evitare comportamenti instabili.
+Usa la sezione **Inspection**.
 
-## Material Maps modifica tutti i materiali?
+Da lì puoi passare tra **Original**, **Clay** e **UV Checker**, attivare **Wireframe Overlay**, usare **Normal Check** e regolare **AO Strength** o **Normal Strength** quando il materiale contiene già nodi compatibili.
+
+## AO Strength e Normal Strength modificano tutti i materiali?
 
 Regola nodi AO/Occlusion e Normal Map esistenti quando li trova. Se il materiale non contiene quei nodi, il controllo può non avere effetto visibile.
 

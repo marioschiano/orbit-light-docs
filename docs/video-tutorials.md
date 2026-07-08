@@ -16,6 +16,6 @@ Questa pagina raccoglierà i video tutorial di Orbit Light.
 
 <div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video HDRI Rotation</strong><br>Sostituire con embed YouTube.</div></div></div>
 
-## 4. Material Maps
+## 4. Inspection e controlli materiale
 
-<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video Material Maps</strong><br>Sostituire con embed YouTube.</div></div></div>
+<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video Inspection</strong><br>Sostituire con embed YouTube.</div></div></div>

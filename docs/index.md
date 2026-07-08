@@ -17,12 +17,12 @@ Orbit Light crea e aggiorna un setup World HDRI per illuminare il modello in Mat
 ## Funzioni principali
 
 - **Create Orbit Light** crea o aggiorna l'illuminazione HDRI e porta Blender nello workspace Shading.
-- **HDRI Environment** gestisce immagine HDRI, opacity, exposure, blur, rotation, tilt e alignment.
+- **HDRI Environment** gestisce immagine HDRI, opacity, exposure, blur e rotation.
 - **Shift + Right Mouse Drag** ruota l'environment attorno al modello.
-- **Shift + Alt + Right Mouse Drag** inclina verticalmente l'HDRI quando Blender espone il controllo nativo.
 - **Import HDRI Folder** importa librerie HDRI nel picker nativo di Blender.
-- **Shadows** controlla le ombre viewport quando disponibili.
-- **Material Maps** regola AO Strength e Normal Strength sui nodi già presenti nei materiali.
+- **Inspection** controlla Original, Clay, UV Checker, wireframe, Normal Check, AO Strength e Normal Strength.
+- **PBR Pipeline** organizza il lavoro in **STEP 1 Calibration**, **STEP 2 Bake** e **STEP 3 Export**.
+- **Studio Setup**, **Capture** e **Turntable** aiutano a presentare il modello con screenshot e video MP4.
 
 ---
 
