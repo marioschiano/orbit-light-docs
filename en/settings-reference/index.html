@@ -1,0 +1,1806 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://marioschiano.github.io/orbit-light-docs/en/settings-reference/">
+      
+      
+        <link rel="prev" href="../material-maps/">
+      
+      
+        <link rel="next" href="../export-tips/">
+      
+      
+        
+          <link rel="alternate" href="../../settings-reference/" hreflang="it">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Settings Reference - Orbit Light Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/orbit-light.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#riferimento-impostazioni" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="Orbit Light Documentation" class="md-header__button md-logo" aria-label="Orbit Light Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Orbit Light Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Settings Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../settings-reference/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="Orbit Light Documentation" class="md-nav__button md-logo" aria-label="Orbit Light Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Orbit Light Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-orbit-light/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why Orbit Light
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hdri-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HDRI Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shortcuts and Rotation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inspection and Material Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#controlli-principali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controlli principali
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hdri-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HDRI Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbr-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PBR Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PBR Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 1 Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 2 Bake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 3 Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#studio-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Studio Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turntable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turntable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asset-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asset Info
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preferences
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video-tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#controlli-principali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controlli principali
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hdri-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HDRI Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbr-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PBR Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PBR Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 1 Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 2 Bake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STEP 3 Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#studio-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Studio Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turntable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turntable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asset-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asset Info
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preferences
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="riferimento-impostazioni">Riferimento impostazioni</h1>
+<p>Questa pagina riassume le voci principali dell'attuale pannello Orbit Light.</p>
+<hr>
+<h2 id="controlli-principali">Controlli principali</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Quando usarla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Orbit Light ON / OFF</strong></td>
+<td>Abilita o disabilita i controlli viewport di Orbit Light.</td>
+<td>Usalo quando vuoi spegnere temporaneamente il setup senza rimuovere la scena.</td>
+</tr>
+<tr>
+<td><strong>Create Orbit Light</strong></td>
+<td>Crea o aggiorna il World HDRI, passa allo workspace Shading e imposta Material Preview quando possibile.</td>
+<td>Usalo dopo aver scelto una HDRI o quando vuoi aggiornare il setup.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="hdri-environment">HDRI Environment</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HDRI picker</strong></td>
+<td>Usa il picker nativo Material Preview / Studio Light di Blender.</td>
+<td>Utile per scegliere rapidamente un ambiente già disponibile.</td>
+</tr>
+<tr>
+<td><strong>HDRI</strong></td>
+<td>Immagine environment usata per il World.</td>
+<td>Supporta <code>.hdr</code>, <code>.exr</code>, <code>.tx</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>.</td>
+</tr>
+<tr>
+<td><strong>Import HDRI Folder</strong></td>
+<td>Copia una cartella HDRI nella libreria Studio Light di Blender.</td>
+<td>Le HDRI restano disponibili anche dopo il riavvio di Blender.</td>
+</tr>
+<tr>
+<td><strong>Environment Opacity</strong></td>
+<td>Controlla la visibilità dello sfondo.</td>
+<td>Non spegne l'illuminazione.</td>
+</tr>
+<tr>
+<td><strong>Environment Exposure (EV)</strong></td>
+<td>Controlla la forza luminosa.</td>
+<td>Valori più alti illuminano di più.</td>
+</tr>
+<tr>
+<td><strong>Environment Blur</strong></td>
+<td>Sfoca lo sfondo HDRI in Material Preview.</td>
+<td>Usa controlli nativi Blender quando disponibili.</td>
+</tr>
+<tr>
+<td><strong>Environment Rotation</strong></td>
+<td>Ruota orizzontalmente l'HDRI.</td>
+<td>Può essere controllato anche con Shift + Right Mouse Drag.</td>
+</tr>
+<tr>
+<td><strong>Sensitivity</strong></td>
+<td>Sensibilità del drag di rotazione.</td>
+<td>Aumentala per una rotazione più rapida.</td>
+</tr>
+<tr>
+<td><strong>Rotate Environment</strong></td>
+<td>Avvia la rotazione manuale dell'environment.</td>
+<td>È il pulsante con icona mouse vicino a Sensitivity.</td>
+</tr>
+<tr>
+<td><strong>Drag Target</strong></td>
+<td>Decide cosa controlla il drag interattivo.</td>
+<td>Utile quando vuoi separare rotazione environment e comportamento viewport.</td>
+</tr>
+<tr>
+<td><strong>Environment Shadows</strong></td>
+<td>Attiva le ombre dell'environment quando Blender le espone.</td>
+<td>Dipende dai controlli viewport disponibili nella versione di Blender.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="inspection">Inspection</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inspection Mode - Original</strong></td>
+<td>Mostra i materiali originali.</td>
+<td>È la modalità normale di lavoro.</td>
+</tr>
+<tr>
+<td><strong>Inspection Mode - Clay</strong></td>
+<td>Applica una visualizzazione clay temporanea.</td>
+<td>Utile per leggere forme, volumi e shading senza texture.</td>
+</tr>
+<tr>
+<td><strong>Inspection Mode - UV Checker</strong></td>
+<td>Applica una visualizzazione checker temporanea.</td>
+<td>Utile per controllare stretching e leggibilità UV.</td>
+</tr>
+<tr>
+<td><strong>Wireframe Overlay</strong></td>
+<td>Mostra la topologia sopra al modello.</td>
+<td>Aiuta a controllare densità e struttura della mesh.</td>
+</tr>
+<tr>
+<td><strong>Wireframe Opacity</strong></td>
+<td>Regola la trasparenza del wireframe.</td>
+<td>Appare quando Wireframe Overlay è attivo.</td>
+</tr>
+<tr>
+<td><strong>Normal Check</strong></td>
+<td>Applica un preset di controllo per le normali.</td>
+<td>Utile quando vuoi individuare shading rotto o normali invertite.</td>
+</tr>
+<tr>
+<td><strong>AO Strength</strong></td>
+<td>Regola nodi AO/Occlusion esistenti.</td>
+<td>Non crea AO nuova.</td>
+</tr>
+<tr>
+<td><strong>Normal Strength</strong></td>
+<td>Regola nodi Normal Map esistenti.</td>
+<td>Non crea normal map nuova.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="pbr-pipeline">PBR Pipeline</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pipeline Status</strong></td>
+<td>Mostra lo stato della pipeline.</td>
+<td>Si aggiorna dopo le operazioni principali.</td>
+</tr>
+<tr>
+<td><strong>STEP 1 Calibration</strong></td>
+<td>Apre lo step per creare una copia di lavoro e calibrare i materiali.</td>
+<td>È lo step più operativo della pipeline attuale.</td>
+</tr>
+<tr>
+<td><strong>STEP 2 Bake</strong></td>
+<td>Mostra lo step dedicato al bake.</td>
+<td>Il bake engine è indicato come funzione in arrivo.</td>
+</tr>
+<tr>
+<td><strong>STEP 3 Export</strong></td>
+<td>Mostra lo step dedicato all'export.</td>
+<td>FBX / OBJ / GLB export è indicato come funzione in arrivo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-1-calibration">STEP 1 Calibration</h3>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hide Original</strong></td>
+<td>Nasconde il modello originale dopo la creazione della copia di calibrazione.</td>
+<td>Mantiene il workflow non distruttivo.</td>
+</tr>
+<tr>
+<td><strong>Create Calibration Copy</strong></td>
+<td>Crea una copia di lavoro per calibrare materiali e preparare il modello.</td>
+<td>Non modifica direttamente l'originale.</td>
+</tr>
+<tr>
+<td><strong>Base Saturation</strong></td>
+<td>Regola la saturazione del base color.</td>
+<td>Lavora sulla copia/materiali di calibrazione.</td>
+</tr>
+<tr>
+<td><strong>Base Brightness</strong></td>
+<td>Regola la luminosità del base color.</td>
+<td>Utile per uniformare texture troppo scure o chiare.</td>
+</tr>
+<tr>
+<td><strong>Base Contrast</strong></td>
+<td>Regola il contrasto del base color.</td>
+<td>Utile per rendere più leggibile il materiale.</td>
+</tr>
+<tr>
+<td><strong>Roughness Brightness</strong></td>
+<td>Regola la luminosità della roughness.</td>
+<td>Influenza il comportamento visivo delle superfici.</td>
+</tr>
+<tr>
+<td><strong>Roughness Contrast</strong></td>
+<td>Regola il contrasto della roughness.</td>
+<td>Utile per separare aree più o meno lucide.</td>
+</tr>
+<tr>
+<td><strong>Metallic Strength</strong></td>
+<td>Regola il contributo metallic.</td>
+<td>Utile per materiali PBR con metallic map o valori metallic.</td>
+</tr>
+<tr>
+<td><strong>Emission Strength</strong></td>
+<td>Regola il contributo emission.</td>
+<td>Utile per materiali con emissione già presente.</td>
+</tr>
+<tr>
+<td><strong>Reset Material Calibration</strong></td>
+<td>Riporta i valori di calibrazione ai default.</td>
+<td>È il pulsante con icona reset/loop.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-2-bake">STEP 2 Bake</h3>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bake Textures</strong></td>
+<td>Rappresenta lo step di bake delle texture calibrate.</td>
+<td>Nella versione attuale è disabilitato e mostra "Bake engine coming next.".</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-3-export">STEP 3 Export</h3>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prepare Export Model</strong></td>
+<td>Crea una copia dedicata all'export.</td>
+<td>Lo step segnala che FBX / OBJ / GLB export arriverà in una versione futura.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="studio-setup">Studio Setup</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Light Rig Preset</strong></td>
+<td>Sceglie il preset di illuminazione studio.</td>
+<td>Include Studio Softbox, Product, Sunset, Night, Comic e Horror.</td>
+</tr>
+<tr>
+<td><strong>Create Backdrop</strong></td>
+<td>Abilita la creazione del fondale/cyclorama.</td>
+<td>Se attivo mostra i controlli Backdrop.</td>
+</tr>
+<tr>
+<td><strong>Backdrop</strong></td>
+<td>Sceglie il tipo di fondale.</td>
+<td>Include White Studio, Grey Clay, Dark Studio e Infinite Black.</td>
+</tr>
+<tr>
+<td><strong>Backdrop Radius Scale</strong></td>
+<td>Regola la scala del fondale rispetto al modello.</td>
+<td>Utile per modelli molto piccoli o molto grandi.</td>
+</tr>
+<tr>
+<td><strong>Backdrop Bevel Segments</strong></td>
+<td>Controlla la morbidezza della curva del fondale.</td>
+<td>Valori più alti rendono il fondale più morbido.</td>
+</tr>
+<tr>
+<td><strong>Create Camera</strong></td>
+<td>Crea una camera inquadrata sul modello.</td>
+<td>Utile per screenshot e turntable.</td>
+</tr>
+<tr>
+<td><strong>Create Studio Setup</strong></td>
+<td>Genera rig luci, camera e backdrop.</td>
+<td>Usa i valori impostati nella sezione.</td>
+</tr>
+<tr>
+<td><strong>Remove Studio Setup</strong></td>
+<td>Rimuove lo studio setup generato.</td>
+<td>È il pulsante con icona cestino.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="capture">Capture</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Output Folder</strong></td>
+<td>Cartella dove salvare screenshot e video.</td>
+<td>Di default usa <code>//orbit_light_captures</code>.</td>
+</tr>
+<tr>
+<td><strong>Screenshot Preset</strong></td>
+<td>Sceglie la risoluzione dello screenshot.</td>
+<td>Include 2K, 4K, 1080p e UHD.</td>
+</tr>
+<tr>
+<td><strong>Screenshot Format</strong></td>
+<td>Sceglie formato Square o 16:9.</td>
+<td>Influenza risoluzione X/Y del render.</td>
+</tr>
+<tr>
+<td><strong>Transparent PNG</strong></td>
+<td>Salva PNG con trasparenza quando possibile.</td>
+<td>Può nascondere il backdrop durante la cattura.</td>
+</tr>
+<tr>
+<td><strong>Capture View</strong></td>
+<td>Salva uno screenshot dalla camera o dal viewport.</td>
+<td>Usa la camera se lo studio setup l'ha creata e impostata.</td>
+</tr>
+<tr>
+<td><strong>Progress</strong></td>
+<td>Mostra avanzamento dell'operazione di capture.</td>
+<td>Appare durante operazioni attive.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="turntable">Turntable</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Turntable Speed</strong></td>
+<td>Controlla la velocità della preview nel viewport.</td>
+<td>Valore in gradi al secondo.</td>
+</tr>
+<tr>
+<td><strong>Start Preview</strong></td>
+<td>Avvia la rotazione del modello nel viewport.</td>
+<td>Non esporta un video, serve per preview interattiva.</td>
+</tr>
+<tr>
+<td><strong>Stop Preview</strong></td>
+<td>Ferma la preview turntable.</td>
+<td>Appare quando la preview è in corso.</td>
+</tr>
+<tr>
+<td><strong>Video Preset</strong></td>
+<td>Sceglie la risoluzione del video.</td>
+<td>Include Preview 512, 1080p, 2K e 4K.</td>
+</tr>
+<tr>
+<td><strong>Video Format</strong></td>
+<td>Sceglie Square o 16:9.</td>
+<td>Influenza il formato finale.</td>
+</tr>
+<tr>
+<td><strong>Video Duration</strong></td>
+<td>Durata del giro 360.</td>
+<td>Valore in secondi.</td>
+</tr>
+<tr>
+<td><strong>FPS</strong></td>
+<td>Fotogrammi al secondo.</td>
+<td>Valori più alti sono più fluidi ma più lenti da renderizzare.</td>
+</tr>
+<tr>
+<td><strong>Render Turntable MP4</strong></td>
+<td>Crea un video MP4 turntable non distruttivo.</td>
+<td>Usa Eevee/OpenGL e salva nella cartella Output Folder.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="asset-info">Asset Info</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Refresh Asset Info</strong></td>
+<td>Aggiorna le statistiche del modello.</td>
+<td>Usalo dopo aver cambiato selezione o scena.</td>
+</tr>
+<tr>
+<td><strong>Objects</strong></td>
+<td>Numero di oggetti rilevati.</td>
+<td>Dato informativo.</td>
+</tr>
+<tr>
+<td><strong>Vertices</strong></td>
+<td>Numero di vertici.</td>
+<td>Dato informativo.</td>
+</tr>
+<tr>
+<td><strong>Triangles</strong></td>
+<td>Numero di triangoli.</td>
+<td>Dato informativo.</td>
+</tr>
+<tr>
+<td><strong>Materials</strong></td>
+<td>Numero di materiali.</td>
+<td>Dato informativo.</td>
+</tr>
+<tr>
+<td><strong>UV Maps</strong></td>
+<td>Numero di UV maps.</td>
+<td>Dato informativo.</td>
+</tr>
+<tr>
+<td><strong>Textures</strong></td>
+<td>Numero di texture rilevate.</td>
+<td>Dato informativo.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="preferences">Preferences</h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Check for Updates</strong></td>
+<td>Controlla il manifest online di Orbit Light.</td>
+<td>Segnala se esiste una versione più recente.</td>
+</tr>
+<tr>
+<td><strong>Open Documentation</strong></td>
+<td>Apre la documentazione online.</td>
+<td>Al momento apre la versione italiana alla root del sito.</td>
+</tr>
+<tr>
+<td><strong>Release Notes</strong></td>
+<td>Apre il changelog online.</td>
+<td>Usa il link del manifest se disponibile.</td>
+</tr>
+<tr>
+<td><strong>Video Tutorials</strong></td>
+<td>Apre il canale YouTube.</td>
+<td>Punta al canale Mario Schiano 3D.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
