@@ -22,6 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install mkdocs-material mkdocs-static-i18n
+        pip install mkdocs mkdocs-material mkdocs-glightbox
 
       - name: Deploy
         run: mkdocs gh-deploy --force
