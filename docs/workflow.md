@@ -1,111 +1,75 @@
-# Workflow manuale
+# Workflow operativo
 
-Orbit Light combina illuminazione HDRI, controllo materiali, pipeline PBR, capture e turntable in un unico pannello.
+Le sezioni principali sono indipendenti: puoi usare soltanto l'HDRI, creare uno studio, produrre un turntable oppure calibrare i materiali. Non è necessario completarle in sequenza.
 
----
+## HDRI e viewport
 
-## 1. Crea l'environment
+Attiva **Orbit Light ON**, scegli l'HDRI e regola visibilità, luce, blur e rotazione. In **Viewport Display** puoi sovrapporre il wireframe o attivare un checker UV temporaneo.
 
-Scegli una HDRI nel pannello **HDRI Environment** e clicca **Create Orbit Light**.
+## Studio Setup
 
-Orbit Light crea o aggiorna il World HDRI, passa allo workspace Shading e imposta il 3D View in Material Preview quando possibile.
+Apri la tendina **Studio Setup** per creare un set coerente con le dimensioni del modello.
 
-<p align="center">
-  <img src="img/placeholder-image.svg" alt="Create Orbit Light workflow" style="max-width:900px;width:100%;">
-</p>
+### Light Rig
 
----
+I preset disponibili sono:
 
-## 2. Controlla luce, viewport e materiali
+**Studio Softbox, Product, High Key, Beauty, Rembrandt, Split, Hard Surface, Top Light, Rim Focus, Sunset, Night, Neon, Comic e Horror**, oltre a **Custom**.
 
-Usa **Environment Opacity**, **Environment Exposure (EV)**, **Environment Blur** ed **Environment Rotation** per regolare la luce e lo sfondo.
+Per ogni preset puoi modificare intensità e colore di **Key**, **Fill** e **Rim**. La prima modifica passa a Custom senza alterare il preset di origine. **Reset to Preset** ripristina i suoi valori originali.
 
-Usa **Shift + Right Mouse Drag** per ruotare l'HDRI direttamente nel viewport. Durante la rotazione Orbit Light mostra un HUD temporaneo, così puoi vedere il valore mentre lavori.
+**View Lights** mostra o nasconde nel viewport luci e guide, senza cambiare l'illuminazione.
 
-La sezione **Inspection** serve per controllare il modello:
+### Fondale
 
-- **Inspection Mode** passa tra Original, Clay e UV Checker.
-- **Wireframe Overlay** mostra la topologia sopra al modello.
-- **Normal Check** applica una vista utile per controllare problemi di normali.
-- **AO Strength** e **Normal Strength** regolano i nodi già presenti nei materiali.
+**Studio Backdrop** crea uno dei due fondali:
 
----
+- **Cyclorama**: fondale fotografico frontale, largo e profondo, con raccordo regolabile.
+- **360 Dome**: fondale circolare per muovere la camera attorno all'oggetto senza scoprire il vuoto.
 
-## 3. Usa la PBR Pipeline
+I preset includono White Studio, Warm White, Light Grey, Grey Clay, Warm Grey, Cool Grey, Dark Studio, Infinite Black, Midnight Blue, Burgundy, Chroma Green e Chroma Blue.
 
-La sezione **PBR Pipeline** è divisa in tre step.
+Con il Dome, **Keep Camera Inside** limita la distanza della camera in base alle dimensioni del fondale. Se cambi **Backdrop Size**, il limite si aggiorna insieme al Dome.
 
-### STEP 1 Calibration
+### Camera
 
-Premi **Create Calibration Copy** per creare una copia di lavoro non distruttiva.
+**Auto Camera** crea e inquadra la camera sul modello. **Keep Camera Aimed at Center** usa un target nascosto e un vincolo per mantenere la camera orientata verso il centro. Dopo la creazione, Camera to View è attivo per consentire di rifinire l'inquadratura navigando nel riquadro camera.
 
-Qui puoi regolare:
+Premi **Create Studio Setup** per creare o aggiornare il set. Il pulsante cestino rimuove gli elementi generati.
 
-- **Hide Original**
-- **Base Saturation**
-- **Base Brightness**
-- **Base Contrast**
-- **Roughness Brightness**
-- **Roughness Contrast**
-- **Metallic Strength**
-- **Emission Strength**
+## Turntable
 
-Usa **Reset Material Calibration** per riportare i valori di calibrazione ai default.
+### Preview
 
-### STEP 2 Bake
+**Start Preview** ruota il modello nel viewport alla velocità indicata in gradi al secondo. **Stop Preview** ferma il movimento e ripristina la rotazione iniziale.
 
-La sezione **STEP 2 Bake** prepara il bake delle texture calibrate.
+### Still Capture
 
-Nella versione attuale il pulsante **Bake Textures** è presente come step di pipeline, ma il bake engine è indicato come funzione in arrivo.
+**Capture View** salva un PNG. Se esiste una camera attiva usa quella e renderizza con Eevee; senza camera cattura il viewport corrente. Il formato Square/16:9 aggiorna subito l'aspect ratio della camera.
 
-### STEP 3 Export
+Con **Transparent PNG** il fondale generato viene escluso dalla cattura, senza cancellarlo dalla scena.
 
-La sezione **STEP 3 Export** prepara una copia export del modello.
+### MP4 e GIF
 
-Il pulsante **Prepare Export Model** crea una copia dedicata all'export. L'esportazione FBX / OBJ / GLB è indicata come funzione in arrivo.
+La creazione del turntable avviene in due fasi:
 
----
+1. **Rendering Frames**: Eevee renderizza dalla camera una sequenza JPEG qualità 92 usando la GPU.
+2. **Encoding**: i fotogrammi diventano un MP4 H.264 o una GIF.
 
-## 4. Studio Setup
+Ogni fase ha una percentuale da 0 a 100, dettaglio del fotogramma corrente e tempo trascorso. Il rendering non apre a tutto schermo la finestra Render Result e può essere annullato dal pulsante accanto a Create.
 
-Usa **Studio Setup** quando vuoi creare rapidamente una scena da presentazione:
+Velocità e durata sono collegate: un giro completo è sempre 360°, quindi aumentando **Turntable Speed** diminuisce automaticamente **Video Duration**, e viceversa.
 
-- **Light Rig Preset** sceglie il mood della luce.
-- **Create Backdrop** abilita il cyclorama.
-- **Backdrop** sceglie il tipo di fondale.
-- **Backdrop Radius Scale** regola la scala del fondale.
-- **Backdrop Bevel Segments** controlla la morbidezza della curva.
-- **Create Camera** aggiunge una camera inquadrata sul modello.
-- **Create Studio Setup** genera rig, backdrop e camera.
-- Il pulsante con cestino rimuove lo studio setup generato.
+## Calibration
 
----
+Alla prima regolazione Orbit Light crea automaticamente una copia di lavoro. L'utente continua a lavorare sul modello visibile, mentre l'originale rimane intatto.
 
-## 5. Capture e Turntable
+Usa **Substance Painter Match** per allineare normal map, color space e display transform, poi calibra i canali. **Bake Missing AO** è già disponibile. Il bake completo delle texture calibrate è indicato nel pannello come funzione futura.
 
-La sezione **Capture** salva screenshot dal viewport o dalla camera.
+## Export
 
-Imposta **Output Folder**, **Screenshot Preset**, **Screenshot Format** e **Transparent PNG**, poi clicca **Capture View**.
+La sezione Export rappresenta il modello finale previsto per FBX, OBJ e GLB. Nella versione 1.13.63 l'esportazione automatica non è ancora implementata; usa gli exporter nativi di Blender seguendo i [consigli export](export-tips.md).
 
-La sezione **Turntable** crea anteprime e video 360:
+## Reset Default
 
-- **Turntable Speed** controlla la velocità della preview nel viewport.
-- **Start Preview** avvia la rotazione del modello.
-- **Stop Preview** ferma la preview.
-- **Video Preset**, **Video Format**, **Video Duration** e **FPS** controllano il video.
-- **Render Turntable MP4** genera un video turntable.
-
----
-
-## 6. Asset Info
-
-La sezione **Asset Info** mostra un riepilogo tecnico del modello selezionato:
-
-- Objects
-- Vertices
-- Triangles
-- Materials
-- UV Maps
-- Textures
-
-Premi **Refresh Asset Info** per aggiornare i dati.
+Il pulsante in fondo al pannello ripristina i valori di studio predefiniti, compresa la spunta **Shadows** attiva.

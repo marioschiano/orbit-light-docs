@@ -31,10 +31,10 @@ plugins:
             Installazione: Installation
             Guida rapida: Quick Start
             Workflow: Workflow
-            Workflow manuale: Manual Workflow
+            Workflow operativo: Operational Workflow
             HDRI Environment: HDRI Environment
             Shortcut e rotazione: Shortcuts and Rotation
-            Inspection e controlli materiale: Inspection and Material Controls
+            Viewport e Calibration: Viewport and Calibration
             Riferimento: Reference
             Riferimento impostazioni: Settings Reference
             Consigli export: Export Tips
@@ -67,10 +67,10 @@ nav:
       - Installazione: installation.md
       - Guida rapida: quick-start.md
   - Workflow:
-      - Workflow manuale: workflow.md
+      - Workflow operativo: workflow.md
       - HDRI Environment: hdri-environment.md
       - Shortcut e rotazione: shortcuts.md
-      - Inspection e controlli materiale: material-maps.md
+      - Viewport e Calibration: material-maps.md
   - Riferimento:
       - Riferimento impostazioni: settings-reference.md
       - Consigli export: export-tips.md

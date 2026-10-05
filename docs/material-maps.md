@@ -1,42 +1,41 @@
-# Inspection e controlli materiale
+# Viewport e Calibration
 
-La sezione **Inspection** aiuta a controllare rapidamente materiali, UV, wireframe e normal map senza uscire dal workflow principale di Orbit Light.
+## Viewport Display
 
-<p align="center">
-  <img src="img/placeholder-image.svg" alt="Inspection in Orbit Light" style="max-width:900px;width:100%;">
-</p>
+**Wireframe Overlay** mostra la topologia sopra ai materiali; quando è attivo compare **Wireframe Opacity**.
 
----
+**UV Checker** inserisce temporaneamente nodi Texture Coordinate e Checker Texture nello shader esistente, usando la UV attiva. Non crea un nuovo materiale e non sostituisce quello originale. Quando disattivi il controllo, Orbit Light elimina i nodi temporanei e ripristina il collegamento o il colore originale del Base Color.
 
-## Inspection Mode
+## Copia di calibrazione automatica
 
-**Inspection Mode** permette di passare tra tre viste:
+Non serve creare manualmente una copia. Alla prima modifica di un parametro in **Calibration**, Orbit Light duplica automaticamente gli oggetti e i materiali interessati e applica le correzioni alla copia di lavoro. Originali, texture e nodi di partenza restano intatti.
 
-- **Original** mantiene i materiali originali.
-- **Clay** applica una vista neutra per leggere forme, volumi e shading.
-- **UV Checker** applica una texture checker temporanea per controllare stretching e distribuzione UV.
+## Substance Painter Match
 
-## Wireframe Overlay
+Questa funzione allinea la lettura PBR tra Substance Painter e Blender:
 
-**Wireframe Overlay** mostra la topologia sopra al modello.
+- **Normal Format**: OpenGL oppure DirectX; con DirectX viene corretto il canale verde.
+- **Display Transform**: PBR Neutral, ACES 2.0 oppure Standard sRGB.
+- configurazione automatica di sRGB per il colore e Non-Color per mappe dati e packed maps;
+- supporto alla lettura di texture packed come ORM, RMA, MRA e MOS;
+- impostazioni PBR coerenti per IOR e IOR Level.
 
-Quando è attivo, **Wireframe Opacity** controlla quanto il wireframe appare visibile.
+Quando disattivi il match, Orbit Light ripristina la precedente gestione colore della scena.
 
-## Normal Check
+## Controlli di calibrazione
 
-**Normal Check** applica un preset di controllo utile per individuare shading rotto, normal map troppo deboli o problemi di lettura della superficie.
+| Gruppo | Controlli |
+|---|---|
+| **Diffuse / Base Color** | Saturation, Brightness, Contrast e Sharpness. |
+| **Roughness** | Brightness, Contrast e Invert per mappe glossiness/smoothness. |
+| **Metallic** | Strength, Contrast e Invert. |
+| **Surface Detail** | Occlusion Strength, Normal Strength ed Emission Strength. |
 
-## AO Strength
+**Diffuse Sharpness** campiona pixel vicini nella texture Base Color. Ha effetto sui materiali con Base Color basato su immagine; a zero i nodi temporanei vengono rimossi.
 
-Regola input di forza su nodi o gruppi AO/Occlusion quando sono già presenti nel materiale.
+## Bake Missing AO
 
-Non crea automaticamente una mappa AO nuova.
+Se il modello non contiene una mappa di occlusione, scegli **512 px**, **1K**, **2K** o **4K**, imposta **Bake Folder** e premi **Bake Missing AO**. Il bake calcola una self-occlusion dal modello corrente e non richiede una coppia high poly/low poly.
 
-## Normal Strength
-
-Regola la forza dei nodi **Normal Map** già presenti nel materiale.
-
-Non crea automaticamente una normal map nuova.
-
-!!! note "Importante"
-    AO Strength e Normal Strength lavorano sui nodi esistenti. Se il materiale non contiene AO/Occlusion o Normal Map collegati, il controllo potrebbe non produrre cambiamenti visibili.
+!!! warning "Bake completo"
+    Nella versione 1.13.63 il bake della sola AO mancante è operativo. **Bake Calibrated Textures** è ancora disabilitato: il motore che trasferirà tutte le correzioni nelle texture finali è in sviluppo.

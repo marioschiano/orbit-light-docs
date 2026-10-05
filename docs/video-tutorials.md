@@ -1,21 +1,17 @@
 # Video Tutorials
 
-Questa pagina raccoglierà i video tutorial di Orbit Light.
+Questa sezione raccoglierà i video aggiornati per l'interfaccia **1.13.63**.
 
----
+## Argomenti previsti
 
-## 1. Installazione
+- installazione e primo avvio;
+- HDRI picker, import cartella e drag interattivo;
+- Studio Setup, preset luce, Cyclorama e 360 Dome;
+- screenshot, turntable MP4 e GIF;
+- Calibration e Substance Painter Match;
+- Bake Missing AO.
 
-<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video Installazione</strong><br>Sostituire con embed YouTube.</div></div></div>
+Nel frattempo consulta la [Guida rapida](quick-start.md), il [Workflow operativo](workflow.md) e il [Riferimento impostazioni](settings-reference.md).
 
-## 2. Workflow base
-
-<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video Workflow base</strong><br>Sostituire con embed YouTube.</div></div></div>
-
-## 3. HDRI e rotazione Substance-style
-
-<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video HDRI Rotation</strong><br>Sostituire con embed YouTube.</div></div></div>
-
-## 4. Inspection e controlli materiale
-
-<div class="ol-video"><div class="ol-video-placeholder"><div><strong>Video Inspection</strong><br>Sostituire con embed YouTube.</div></div></div>
+!!! note
+    Gli screenshot dell'interfaccia saranno aggiunti in un aggiornamento dedicato della documentazione.
